@@ -37,7 +37,9 @@ const Header = () => {
 								className="h-[100%] w-[100%]"
 							/>
 						</div>
-						<span className="text-white font-bold text-xl">Signature Asia</span>
+						<span className="text-white font-bold text-xl">
+							Signature Asia&apos;s
+						</span>
 					</div>
 
 					{/* Centered Navigation for desktop */}

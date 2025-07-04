@@ -138,7 +138,7 @@ const Footer = () => {
 							<div className="flex flex-col items-center justify-center rounded-full">
 								<Image
 									src={"/logo.png"}
-									alt="Signature Asia Logo"
+									alt="Signature Asia's Logo"
 									width={80}
 									height={80}
 								/>
@@ -148,8 +148,8 @@ const Footer = () => {
 
 						<div className="text-center text-gray-400">
 							<p>
-								&copy; 2025 Signature Asia. All rights reserved. Empowering
-								farmers since 2015.
+								&copy; 2025 Signature Asia&apos;s. All rights reserved.
+								Empowering farmers since 2015.
 							</p>
 						</div>
 					</div>

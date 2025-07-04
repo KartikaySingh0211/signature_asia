@@ -13,7 +13,7 @@ interface ContactMapProps {
 
 const ContactMap: React.FC<ContactMapProps> = ({
 	title = "Visit Our Location",
-	description = "Find us at Signature Asia, Ghaziabad",
+	description = "Find us at Signature Asia's, Ghaziabad",
 	className = "",
 	height = "450px",
 	showTitle = true,

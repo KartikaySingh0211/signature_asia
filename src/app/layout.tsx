@@ -11,9 +11,9 @@ const maitree = Maitree({
 });
 
 export const metadata: Metadata = {
-	title: "Signature Asia",
+	title: "Signature Asia's",
 	description:
-		"Enhancing crop yields since 2015. Specializing in insecticides, fungicides and crop protection products.",
+		"Specializing in insecticides, fungicides and crop protection products. Signature Asia's is a trusted name in the agro-chemical industry, committed to providing high-quality agricultural solutions since 2015. devill, nakail, sysstem, shikanja, hunkaar",
 };
 
 export default function RootLayout({

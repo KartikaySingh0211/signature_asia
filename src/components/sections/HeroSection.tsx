@@ -43,7 +43,7 @@ const Hero = () => {
 			</div> */}
 
 			{/* Hero Content */}
-			<div className="relative top-1/4 z-10 text-center mx-auto px-4 sm:px-6 lg:px-8">
+			<div className="relative top-1/5 z-10 text-center mx-auto px-4 sm:px-6 lg:px-8">
 				<h1 className="text-4xl md:text-[48px] font-bold text-[#417849] mb-6">
 					Empowering Farmers with Innovative Agro Solutions
 				</h1>

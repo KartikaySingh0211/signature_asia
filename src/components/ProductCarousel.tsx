@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { products } from "@/utils/constants";
 import Image from "next/image";
 
-const HarvestCarousel = () => {
+const ProductCarousel = () => {
 	const [currentSlide, setCurrentSlide] = useState(0);
 
 	const nextSlide = () => {
@@ -32,9 +32,9 @@ const HarvestCarousel = () => {
 						style={{ transform: `translateX(-${currentSlide * 100}%)` }}
 					>
 						{products.map((product) => (
-							<div key={product.id} className="min-w-full">
+							<div key={product.id} className="min-w-full h-fit">
 								{/* Mobile Layout */}
-								<div className="flex flex-col sm:hidden px-4 py-6">
+								<div className="flex flex-col items-center justify-center sm:hidden px-4 py-6 min-h-[500px]">
 									{/* Product Image */}
 									<div className="flex items-center justify-center">
 										<Image
@@ -88,9 +88,9 @@ const HarvestCarousel = () => {
 								</div>
 
 								{/* Desktop Layout */}
-								<div className="hidden sm:flex items-center justify-center px-12 py-8">
+								<div className="hidden sm:flex items-center justify-center px-12 py-8 min-h-[600px]">
 									{/* Product Image */}
-									<div className="flex-shrink-0 mr-8">
+									<div className="flex-shrink-0 mr-8 flex items-center justify-center">
 										<Image
 											src={product.image}
 											alt={product.name}
@@ -147,14 +147,14 @@ const HarvestCarousel = () => {
 					{/* Navigation Arrows */}
 					<button
 						onClick={prevSlide}
-						className="absolute left-2 sm:left-4 top-1/3 lg:1/2 transform -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-green-600 hover:bg-green-500 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 z-10"
+						className="absolute left-2 sm:left-4 top-1/3 lg:top-1/2 transform -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-green-600 hover:bg-green-500 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 z-10"
 					>
 						<ChevronLeft className="w-4 h-4 sm:w-6 sm:h-6 text-white" />
 					</button>
 
 					<button
 						onClick={nextSlide}
-						className="absolute right-2 sm:right-4 top-1/3 lg:1/2 transform -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-green-600 hover:bg-green-500 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 z-10"
+						className="absolute right-2 sm:right-4 top-1/3 lg:top-1/2 transform -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-green-600 hover:bg-green-500 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 z-10"
 					>
 						<ChevronRight className="w-4 h-4 sm:w-6 sm:h-6 text-white" />
 					</button>
@@ -179,4 +179,4 @@ const HarvestCarousel = () => {
 	);
 };
 
-export default HarvestCarousel;
+export default ProductCarousel;

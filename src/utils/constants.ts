@@ -59,7 +59,7 @@ export const products = [
 	},
 	{
 		id: 5,
-		name: "SYSTEMM",
+		name: "SYSSTEM",
 		image: "/systemm.png",
 		description:
 			"Leading fungicide having effective broad-spectrum control ensuring more grain per panicle with better crop health.",
