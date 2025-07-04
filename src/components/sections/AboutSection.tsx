@@ -5,13 +5,7 @@ import Team from "../Team";
 const AboutSection = () => {
 	return (
 		<div className="min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-8 mt-24 cursor-default">
-			<Counter
-				target={100000}
-				duration={2000}
-				label="Decade of Excellency Certified by"
-				prefix=""
-				suffix="+"
-			/>
+			<Counter target={100000} duration={2000} suffix="+" />
 			<Team />
 			<div
 				id="contact"
