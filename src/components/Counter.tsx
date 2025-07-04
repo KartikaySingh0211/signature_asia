@@ -1,12 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-const Counter = ({
-	target = 100000,
-	duration = 2000,
-	label = "",
-	prefix = "",
-	suffix = "+",
-}) => {
+const Counter = ({ target = 100000, duration = 2000, suffix = "+" }) => {
 	const [count, setCount] = useState(0);
 	const [isVisible, setIsVisible] = useState(false);
 	const [hasAnimated, setHasAnimated] = useState(false);
@@ -49,8 +43,7 @@ const Counter = ({
 			(timestamp: number): void;
 		}
 
-		let animate: Animate;
-		animate = (timestamp: number) => {
+		const animate: Animate = (timestamp: number) => {
 			if (!startTime) startTime = timestamp;
 			const progress: number = Math.min((timestamp - startTime) / duration, 1);
 
