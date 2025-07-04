@@ -1,0 +1,162 @@
+"use client";
+import Image from "next/image";
+import React from "react";
+
+const Footer = () => {
+	const scrollToSection = (sectionId: string) => {
+		window.scrollTo({
+			top: document.getElementById(sectionId)?.offsetTop || 0,
+			behavior: "smooth",
+		});
+	};
+
+	return (
+		<footer className="bg-gray-800 text-white py-12">
+			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				{/* Main Footer Content */}
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+					{/* Quick Links */}
+					<div>
+						<h3 className="text-xl font-bold mb-4 text-white">Quick Links</h3>
+						<ul className="space-y-3">
+							<li>
+								<div
+									onClick={() => scrollToSection("mission")}
+									className="text-gray-300 hover:text-green-400 transition-colors duration-200 cursor-pointer"
+								>
+									Our mission
+								</div>
+							</li>
+							<li>
+								<div
+									onClick={() => scrollToSection("product")}
+									className="text-gray-300 hover:text-green-400 transition-colors duration-200 cursor-pointer"
+								>
+									Products
+								</div>
+							</li>
+							<li>
+								<div
+									onClick={() => scrollToSection("about")}
+									className="text-gray-300 hover:text-green-400 transition-colors duration-200 cursor-pointer"
+								>
+									Partners
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					{/* Legal Info
+					<div>
+						<h3 className="text-xl font-bold mb-4 text-white">Legal Info</h3>
+						<ul className="space-y-3">
+							<li>
+								<a
+									href="#license"
+									className="text-gray-300 hover:text-green-400 transition-colors duration-200"
+								>
+									Product License
+								</a>
+							</li>
+							<li>
+								<a
+									href="#copyright"
+									className="text-gray-300 hover:text-green-400 transition-colors duration-200"
+								>
+									Copyright
+								</a>
+							</li>
+						</ul>
+					</div> */}
+
+					{/* Follow Us */}
+					<div>
+						<h3 className="text-xl font-bold mb-4 text-white">Follow Us</h3>
+						<ul className="space-y-3">
+							<li>
+								<a
+									href="https://www.instagram.com/signatureasias/?__pwa=1"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="text-gray-300 hover:text-green-400 transition-colors duration-200"
+								>
+									Instagram
+								</a>
+							</li>
+
+							<li>
+								<a
+									href="https://www.youtube.com/@signatureasias"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="text-gray-300 hover:text-green-400 transition-colors duration-200"
+								>
+									Youtube
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					{/* Contact */}
+					<div>
+						<h3 className="text-xl font-bold mb-4 text-white">Contact</h3>
+						<ul className="space-y-3">
+							<li>
+								<a
+									href="tel:+1234567890"
+									className="text-gray-300 hover:text-green-400 transition-colors duration-200"
+								>
+									Phone number
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://maps.app.goo.gl/RWMm4o9E171PFJci9"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="text-gray-300 hover:text-green-400 transition-colors duration-200"
+								>
+									Office
+								</a>
+							</li>
+							<li>
+								<a
+									href="mailto:signatureasias@gmail.com"
+									className="text-gray-300 hover:text-green-400 transition-colors duration-200"
+								>
+									Email
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				{/* Logo and Copyright */}
+				<div className="border-t border-gray-700 pt-8">
+					<div className="flex flex-col md:flex-row justify-between items-center">
+						<div className="flex items-center space-x-2 mb-4 md:mb-0">
+							<div className="flex flex-col items-center justify-center rounded-full">
+								<Image
+									src={"/logo.png"}
+									alt="Signature Asia Logo"
+									width={80}
+									height={80}
+								/>
+								<span className="font-bold">Since 2015</span>
+							</div>
+						</div>
+
+						<div className="text-center text-gray-400">
+							<p>
+								&copy; 2025 Signature Asia. All rights reserved. Empowering
+								farmers since 2015.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	);
+};
+
+export default Footer;
