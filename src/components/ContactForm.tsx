@@ -243,7 +243,7 @@ const ContactForm = () => {
 	};
 
 	const handleWhatsAppConnect = () => {
-		const phoneNumber = "1234567890";
+		const phoneNumber = "9837066801";
 		const message =
 			"Hello, I would like to know more about your farming products and services.";
 		const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(

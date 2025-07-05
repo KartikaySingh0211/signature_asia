@@ -72,8 +72,8 @@ const ContactMap: React.FC<ContactMapProps> = ({
 					allowFullScreen
 					loading="lazy"
 					referrerPolicy="no-referrer-when-downgrade"
-					title="Signature Asia Location Map"
-					aria-label="Google Maps showing Signature Asia location in Ghaziabad"
+					title="Signature Asia's Location Map"
+					aria-label="Google Maps showing Signature Asia's location in Ghaziabad"
 				/>
 
 				{/* Decorative Corner Elements */}
