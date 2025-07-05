@@ -9,9 +9,9 @@ interface ContactSectionProps {
 const ContactSection: React.FC<ContactSectionProps> = ({ className = "" }) => {
 	return (
 		<div
-			className={`mt-10 p-6 min-h-screen  flex items-center justify-center ${className}`}
+			className={`mt-10 p-6 min-h-screen w-full flex items-center justify-center ${className}`}
 		>
-			<div className="bg-[#417849] rounded-3xl p-8 w-fit max-w-6xl shadow-2xl">
+			<div className="bg-[#417849] rounded-3xl p-8 w-fit max-w-7xl shadow-2xl">
 				{/* Header decoration line */}
 				<div className="w-full h-3 bg-[#FFF6C4] rounded-full mb-8"></div>
 

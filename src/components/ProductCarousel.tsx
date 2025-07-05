@@ -15,11 +15,11 @@ const ProductCarousel = () => {
 	};
 
 	return (
-		<div className="w-full max-w-6xl mx-auto p-2 sm:p-8 rounded-2xl">
-			<div className="relative overflow-hidden rounded-xl bg-gradient-to-r from-green-700 to-green-600 shadow-lg">
+		<div className="w-full max-w-7xl mx-auto p-2 sm:p-8 rounded-2xl">
+			<div className="relative overflow-hidden rounded-xl bg-[#417849] shadow-lg">
 				{/* Header */}
-				<div className="text-center py-4 sm:py-6 bg-green-800 px-4">
-					<h1 className="text-lg sm:text-3xl font-bold text-yellow-100 tracking-wide">
+				<div className="text-center py-4 sm:py-6 bg-[#11582A] px-4">
+					<h1 className="text-lg sm:text-3xl font-bold text-[#E9E5B4] tracking-wide">
 						Boost Your Harvest with Our Solutions
 					</h1>
 				</div>
@@ -46,8 +46,8 @@ const ProductCarousel = () => {
 									</div>
 
 									{/* Product Details */}
-									<div className="bg-green-800 rounded-lg p-4 text-white">
-										<h2 className="text-xl font-bold mb-3 text-yellow-200">
+									<div className="bg-[#11582A] rounded-lg p-4 text-white">
+										<h2 className="text-xl font-bold mb-3 text-[#E9E5B4]">
 											{product.name}
 										</h2>
 
@@ -56,7 +56,7 @@ const ProductCarousel = () => {
 										</p>
 
 										<div className="mb-3">
-											<p className="text-xs font-semibold mb-2 text-yellow-200">
+											<p className="text-xs font-semibold mb-2 text-[#E9E5B4]">
 												{product.dualMode}
 											</p>
 											<div className="ml-3">
@@ -73,7 +73,7 @@ const ProductCarousel = () => {
 										</p>
 
 										<div>
-											<h3 className="text-sm font-semibold mb-2 text-yellow-200">
+											<h3 className="text-sm font-semibold mb-2 text-[#E9E5B4]">
 												Benefits
 											</h3>
 											<div className="space-y-1">
@@ -100,8 +100,8 @@ const ProductCarousel = () => {
 									</div>
 
 									{/* Product Details */}
-									<div className="flex-1 bg-green-800 rounded-lg p-6 text-white">
-										<h2 className="text-2xl font-bold mb-4 text-yellow-200">
+									<div className="flex-1 bg-[#11582A] rounded-lg p-6 text-white">
+										<h2 className="text-2xl font-bold mb-4 text-[#E9E5B4]">
 											{product.name}
 										</h2>
 
@@ -110,7 +110,7 @@ const ProductCarousel = () => {
 										</p>
 
 										<div className="mb-4">
-											<p className="text-sm font-semibold mb-2 text-yellow-200">
+											<p className="text-sm font-semibold mb-2 text-[#E9E5B4]">
 												{product.dualMode}
 											</p>
 											<div className="ml-4">
@@ -127,7 +127,7 @@ const ProductCarousel = () => {
 										</p>
 
 										<div>
-											<h3 className="text-lg font-semibold mb-3 text-yellow-200">
+											<h3 className="text-lg font-semibold mb-3 text-[#E9E5B4]">
 												Benefits
 											</h3>
 											<div className="space-y-1">
@@ -147,29 +147,29 @@ const ProductCarousel = () => {
 					{/* Navigation Arrows */}
 					<button
 						onClick={prevSlide}
-						className="absolute left-2 sm:left-4 top-1/3 lg:top-1/2 transform -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-green-600 hover:bg-green-500 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 z-10"
+						className="absolute left-2 sm:left-4 top-1/3 lg:top-1/2 transform -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-[#C2F195] rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 z-10"
 					>
-						<ChevronLeft className="w-4 h-4 sm:w-6 sm:h-6 text-white" />
+						<ChevronLeft className="w-4 h-4 sm:w-6 sm:h-6 text-[#417849]" />
 					</button>
 
 					<button
 						onClick={nextSlide}
-						className="absolute right-2 sm:right-4 top-1/3 lg:top-1/2 transform -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-green-600 hover:bg-green-500 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 z-10"
+						className="absolute right-2 sm:right-4 top-1/3 lg:top-1/2 transform -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-[#C2F195] rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 z-10"
 					>
-						<ChevronRight className="w-4 h-4 sm:w-6 sm:h-6 text-white" />
+						<ChevronRight className="w-4 h-4 sm:w-6 sm:h-6 text-[#417849]" />
 					</button>
 				</div>
 
 				{/* Slide Indicators */}
-				<div className="flex justify-center space-x-2 py-4 bg-green-800">
+				<div className="flex justify-center space-x-2 py-4 bg-[#417849]">
 					{products.map((_, index) => (
 						<button
 							key={index}
 							onClick={() => setCurrentSlide(index)}
 							className={`w-3 h-3 rounded-full transition-all duration-300 ${
 								index === currentSlide
-									? "bg-yellow-400 scale-125"
-									: "bg-green-600 hover:bg-green-500"
+									? "bg-[#f3e9c4] scale-125"
+									: "bg-[#11582A] hover:bg-[#f3e9c4]"
 							}`}
 						/>
 					))}

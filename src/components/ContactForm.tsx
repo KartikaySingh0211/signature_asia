@@ -361,7 +361,7 @@ const ContactForm = () => {
 				<button
 					onClick={handleSubmit}
 					disabled={isSubmitting}
-					className={`bg-yellow-200 hover:bg-yellow-300 text-gray-800 font-semibold px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 ${
+					className={`bg-[#FFF6C4] hover:bg-yellow-200 text-gray-800 font-semibold px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-400 ${
 						isSubmitting ? "opacity-50 cursor-not-allowed transform-none" : ""
 					}`}
 				>

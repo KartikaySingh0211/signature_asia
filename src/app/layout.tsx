@@ -1,14 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
-import { Maitree } from "next/font/google";
+import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const maitree = Maitree({
-	subsets: ["latin"],
-	weight: ["400", "700"], // Adjust weights as needed
-});
+const matangi = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: "Signature Asia's",
@@ -23,7 +20,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${maitree.className} antialiased`}>
+			<body className={`${matangi.className} antialiased`}>
 				<Analytics />
 				<Navbar />
 				{children}

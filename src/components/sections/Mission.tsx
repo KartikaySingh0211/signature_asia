@@ -8,7 +8,7 @@ export default function MissionSection() {
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				{/* Header */}
 				<div className="relative text-center mb-16 pt-8">
-					<div className="absolute left-8 top-0 inline-block bg-[#417849] text-[#f3e9c4] px-4 py-2 rounded-xl text-sm font-medium mb-4">
+					<div className="absolute left-8 top-0 inline-block bg-[#417849] text-[#f3e9c4] px-2 py-1 rounded-md text-md font-medium mb-4">
 						Our mission
 					</div>
 					<h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#005249] mb-6">
