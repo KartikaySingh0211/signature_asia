@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 const Hero = () => {
@@ -10,7 +11,7 @@ const Hero = () => {
 	};
 
 	// Array of background images
-	const backgroundImages = ["./bg3.jpg", "./bg1.png", "./bg4.jpg", "./bg2.jpg"];
+	const backgroundImages = ["/bg3.jpg", "/bg1.png", "/bg4.jpg", "/bg2.jpg"];
 
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -28,11 +29,14 @@ const Hero = () => {
 	return (
 		<section className="relative h-screen overflow-hidden" id="hero">
 			{/* Background Image Overlay */}
-			<div
-				className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 ease-in-out"
-				style={{
-					backgroundImage: `url('${backgroundImages[currentImageIndex]}')`,
-				}}
+			<Image
+				className="absolute inset-0 w-full h-full object-cover object-center"
+				src={backgroundImages[currentImageIndex]}
+				alt="Hero Background"
+				width={1920}
+				height={1920}
+				priority={true}
+				sizes="100vw"
 			/>
 
 			{/* Gradient Overlay */}
