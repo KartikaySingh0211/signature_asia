@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 const Hero = () => {
@@ -29,15 +28,19 @@ const Hero = () => {
 	return (
 		<section className="relative h-screen overflow-hidden" id="hero">
 			{/* Background Image Overlay */}
-			<Image
-				className="absolute inset-0 w-full h-full object-cover object-center"
-				src={backgroundImages[currentImageIndex]}
-				alt="Hero Background"
-				width={1920}
-				height={1920}
-				priority={true}
-				sizes="100vw"
-			/>
+			{backgroundImages.map((image, index) => (
+				<img
+					key={index}
+					className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-1000 ${
+						index === currentImageIndex ? "opacity-100" : "opacity-0"
+					}`}
+					src={image}
+					alt="Background"
+					style={{
+						imageRendering: "crisp-edges",
+					}}
+				/>
+			))}
 
 			{/* Gradient Overlay */}
 			<div className="absolute inset-0 bg-black opacity-10" />
