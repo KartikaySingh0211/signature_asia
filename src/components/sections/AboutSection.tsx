@@ -1,11 +1,12 @@
+"use client";
 import React from "react";
-import Counter from "../Counter";
 import Team from "../Team";
+import SignatureComponent from "../SignatureComponent";
 
 const AboutSection = () => {
 	return (
 		<div className="min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-8 mt-24 cursor-default">
-			<Counter target={100000} duration={2000} suffix="+" />
+			<SignatureComponent />
 			<Team />
 			<div
 				id="contact"

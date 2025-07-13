@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
-import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
-const matangi = Inter({ subsets: ["latin"] });
+import { matangi } from "@/app/fonts/matangi";
 
 export const metadata: Metadata = {
 	title: "Signature Asia's",
@@ -20,7 +18,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${matangi.className} antialiased`}>
+			<body className={`${matangi.variable} antialiased`}>
 				<Analytics />
 				<Navbar />
 				{children}

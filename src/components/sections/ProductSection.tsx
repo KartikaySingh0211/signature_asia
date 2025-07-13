@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import ProductCarousel from "@/components/ProductCarousel";
 const ProductSection = () => {

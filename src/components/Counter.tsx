@@ -1,3 +1,4 @@
+"use client";
 import React, { useState, useEffect, useRef } from "react";
 
 const Counter = ({ target = 100000, duration = 2000, suffix = "+" }) => {

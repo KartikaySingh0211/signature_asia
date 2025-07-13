@@ -90,7 +90,8 @@ export const teamMembers = [
 		name: "Raj Kumar",
 		position: "Regional Manager",
 		image: "/manager.png", // Placeholder for Regional Manager image
-		description: "",
+		description:
+			"He obtained his post-graduate degree in 2006 and embarked upon his professional career in 2010 in Aligarh. Over the following years, he held positions of increasing responsibility at several of the industry's most respected companies. His tenure with Signature Asia's began in 2015, and he has remained a cornerstone of the organization ever since.",
 	},
 ];
 
