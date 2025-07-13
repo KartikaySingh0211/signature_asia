@@ -101,7 +101,7 @@ const ProductCarousel = () => {
 									</div>
 
 									{/* Product Details */}
-									<div className="flex-1 bg-[#11582A] rounded-lg p-6 text-white">
+									<div className="flex-1 bg-[#11582A] lg:max-w-3xl rounded-lg p-6 text-white">
 										<h2 className="text-2xl font-bold mb-4 text-[#E9E5B4]">
 											{product.name}
 										</h2>
