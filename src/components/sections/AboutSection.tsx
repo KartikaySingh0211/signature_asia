@@ -5,7 +5,7 @@ import SignatureComponent from "../SignatureComponent";
 
 const AboutSection = () => {
 	return (
-		<div className="min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-8 mt-24 cursor-default">
+		<div className=" flex flex-col justify-center px-4 sm:px-6 lg:px-8 mt-24 cursor-default">
 			<SignatureComponent />
 			<Team />
 			<div
