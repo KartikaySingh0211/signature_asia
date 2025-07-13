@@ -12,7 +12,7 @@ const inter = Inter({
 
 const Team = () => {
 	return (
-		<div className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 mt-6 sm:mt-8 lg:mt-10">
+		<div className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 mt-6 sm:mt-8 lg:mt-20">
 			<div className="max-w-7xl mx-auto">
 				{/* Header Section */}
 				<div className="text-center mb-8 sm:mb-12 lg:mb-16 relative">

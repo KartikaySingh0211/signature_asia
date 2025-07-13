@@ -93,6 +93,7 @@ const SignatureComponent: React.FC = () => {
 							height={500}
 							width={500}
 							className="w-full h-auto"
+							quality={100}
 						/>
 					</div>
 				</div>
@@ -106,6 +107,7 @@ const SignatureComponent: React.FC = () => {
 							width={500}
 							height={500}
 							className="bg-[#FFF6C4] w-full h-auto"
+							quality={100}
 						/>
 					</div>
 					<div className="text-center bg-[#FFF6C4] mt-4 w-full max-w-sm lg:max-w-md">
