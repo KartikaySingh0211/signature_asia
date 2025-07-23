@@ -1,13 +1,25 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import { usePathname, useRouter } from "next/navigation";
 
 const Footer = () => {
+	const pathname = usePathname();
+	const router = useRouter();
+	const isHomePage = pathname === "/";
+
 	const scrollToSection = (sectionId: string) => {
-		window.scrollTo({
-			top: document.getElementById(sectionId)?.offsetTop || 0,
-			behavior: "smooth",
-		});
+		if (isHomePage) {
+			// If on home page, scroll to section
+			window.scrollTo({
+				top: document.getElementById(sectionId)?.offsetTop || 0,
+				behavior: "smooth",
+			});
+		} else {
+			// If on other pages, navigate to home page with hash using router
+			router.push(`/#${sectionId}`);
+		}
 	};
 
 	return (
@@ -36,12 +48,12 @@ const Footer = () => {
 								</div>
 							</li>
 							<li>
-								<div
-									onClick={() => scrollToSection("about")}
+								<Link
+									href={"/partners"}
 									className="text-gray-300 hover:text-green-400 transition-colors duration-200 cursor-pointer"
 								>
 									Partners
-								</div>
+								</Link>
 							</li>
 						</ul>
 					</div>
@@ -74,25 +86,25 @@ const Footer = () => {
 						<h3 className="text-xl font-bold mb-4 text-white">Follow Us</h3>
 						<ul className="space-y-3">
 							<li>
-								<a
+								<Link
 									href="https://www.instagram.com/signatureasias/?__pwa=1"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="text-gray-300 hover:text-green-400 transition-colors duration-200"
 								>
 									Instagram
-								</a>
+								</Link>
 							</li>
 
 							<li>
-								<a
+								<Link
 									href="https://www.youtube.com/@signatureasias"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="text-gray-300 hover:text-green-400 transition-colors duration-200"
 								>
 									Youtube
-								</a>
+								</Link>
 							</li>
 						</ul>
 					</div>
@@ -102,30 +114,34 @@ const Footer = () => {
 						<h3 className="text-xl font-bold mb-4 text-white">Contact</h3>
 						<ul className="space-y-3">
 							<li>
-								<a
+								<Link
 									href="tel:+919837066801"
+									target="_blank"
+									rel="noopener noreferrer"
 									className="text-gray-300 hover:text-green-400 transition-colors duration-200"
 								>
 									Phone number
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a
+								<Link
 									href="https://maps.app.goo.gl/RWMm4o9E171PFJci9"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="text-gray-300 hover:text-green-400 transition-colors duration-200"
 								>
 									Office
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a
+								<Link
 									href="mailto:signatureasias@gmail.com"
+									target="_blank"
+									rel="noopener noreferrer"
 									className="text-gray-300 hover:text-green-400 transition-colors duration-200"
 								>
 									Email
-								</a>
+								</Link>
 							</li>
 						</ul>
 					</div>

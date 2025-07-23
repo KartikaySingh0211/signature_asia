@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { matangi } from "@/app/fonts/matangi";
+import LeafBackgroundPattern from "@/components/LeafBackgroundPattern";
 
 export const metadata: Metadata = {
 	title: "Signature Asia's",
@@ -20,9 +21,11 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={`${matangi.variable} antialiased`}>
 				<Analytics />
-				<Navbar />
-				{children}
-				<Footer />
+				<LeafBackgroundPattern className="min-h-screen bg-[#FFF6C4]">
+					<Navbar />
+					{children}
+					<Footer />
+				</LeafBackgroundPattern>
 			</body>
 		</html>
 	);

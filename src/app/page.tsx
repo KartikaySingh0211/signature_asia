@@ -1,6 +1,5 @@
 "use client";
 
-import LeafBackgroundPattern from "@/components/LeafBackgroundPattern";
 import AboutSection from "@/components/sections/AboutSection";
 import ContactSection from "@/components/sections/ContactSection";
 
@@ -10,7 +9,7 @@ import ProductSection from "@/components/sections/ProductSection";
 
 export default function LandingPage() {
 	return (
-		<LeafBackgroundPattern className="min-h-screen bg-[#FFF6C4]">
+		<>
 			<HeroSection />
 			<MissionSection />
 			<ProductSection />
@@ -27,6 +26,6 @@ export default function LandingPage() {
 					}
 				}
 			`}</style>
-		</LeafBackgroundPattern>
+		</>
 	);
 }

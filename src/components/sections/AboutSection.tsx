@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 import Team from "../Team";
-import SignatureComponent from "../SignatureComponent";
+import Signature from "../Signature";
 
 const AboutSection = () => {
 	return (
-		<div className=" flex flex-col justify-center px-4 sm:px-6 lg:px-8 mt-24 cursor-default">
-			<SignatureComponent />
+		<div className=" flex flex-col justify-center mt-24 cursor-default">
+			<Signature />
 			<Team />
 			<div
 				id="contact"

@@ -93,6 +93,14 @@ export const teamMembers = [
 		description:
 			"He obtained his post-graduate degree in 2006 and embarked upon his professional career in 2010 in Aligarh. Over the following years, he held positions of increasing responsibility at several of the industry's most respected companies. His tenure with Signature Asia's began in 2015, and he has remained a cornerstone of the organization ever since.",
 	},
+	{
+		id: 3,
+		name: "Rajkumar Aggarwal",
+		position: "Co-founder",
+		image: "/cofounder.png", // Placeholder for Co-founder image
+		description:
+			"With a foundation in Commerce, he has built a 25-year career as an entrepreneur in the agricultural sector. He launched his first venture in fertilizers in 2000, followed by a second in pesticides in 2006. In 2015, he co-founded Signature Asia's and remains a pivotal leader in the organization.",
+	},
 ];
 
 export const navLinks = [

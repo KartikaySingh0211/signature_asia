@@ -1,22 +1,39 @@
 "use client";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
-
 import React, { useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import { navLinks } from "@/utils/constants";
 
 const Header = () => {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+	const pathname = usePathname();
+	const router = useRouter();
+	const isHomePage = pathname === "/";
 
 	const toggleMobileMenu = () => {
 		setIsMobileMenuOpen(!isMobileMenuOpen);
 	};
 
 	const scrollToSection = (sectionId: string) => {
-		window.scrollTo({
-			top: document.getElementById(sectionId)?.offsetTop || 0,
-			behavior: "smooth",
-		});
+		if (isHomePage) {
+			// If on home page, scroll to section
+			window.scrollTo({
+				top: document.getElementById(sectionId)?.offsetTop || 0,
+				behavior: "smooth",
+			});
+		} else {
+			// If on other pages, navigate to home page with hash using router
+			router.push(`/#${sectionId}`);
+		}
+	};
+
+	const handleLogoClick = () => {
+		if (isHomePage) {
+			scrollToSection("hero");
+		} else {
+			router.push("/");
+		}
 	};
 
 	return (
@@ -26,7 +43,7 @@ const Header = () => {
 					{/* Logo */}
 					<div
 						className="flex items-center space-x-2 cursor-pointer"
-						onClick={() => scrollToSection("hero")}
+						onClick={handleLogoClick}
 					>
 						<div className="bg-white rounded-full">
 							<Image
