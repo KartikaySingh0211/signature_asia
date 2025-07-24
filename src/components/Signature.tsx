@@ -129,10 +129,10 @@ const Signature: React.FC = () => {
 					{/* Decade of Excellence image */}
 					<div className="flex-shrink-0 p-3">
 						<Image
-							src={"/decade.png"}
+							src={"/decadeOf.png"}
 							alt={"Decade of Excellence"}
-							width={500}
-							height={500}
+							width={550}
+							height={550}
 							className="max-w-full h-auto"
 						/>
 					</div>
