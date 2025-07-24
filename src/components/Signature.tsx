@@ -91,7 +91,7 @@ const Signature: React.FC = () => {
 			<div className="relative z-10 py-8 md:py-12 ">
 				{/* Signature logo section */}
 				<div className="text-center mb-6 pt-16 pb-10 bg-[#E68937] w-screen flex flex-col items-center justify-center">
-					<div className="mb-4">
+					<div className="mb-4 p-3">
 						<Image
 							src={"/signature.png"}
 							alt={"Signature Logo"}
@@ -127,7 +127,7 @@ const Signature: React.FC = () => {
 				{/* Bottom section with decade of excellence and trust badge */}
 				<div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 mt-12">
 					{/* Decade of Excellence image */}
-					<div className="flex-shrink-0">
+					<div className="flex-shrink-0 p-3">
 						<Image
 							src={"/decade.png"}
 							alt={"Decade of Excellence"}
