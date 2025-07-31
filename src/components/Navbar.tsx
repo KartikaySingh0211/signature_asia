@@ -49,9 +49,10 @@ const Header = () => {
 							<Image
 								src={"/logo.png"}
 								alt="Signature Asia Logo"
-								width={50}
-								height={50}
+								width={60}
+								height={60}
 								className="h-[100%] w-[100%]"
+								quality={100}
 							/>
 						</div>
 						<span className="text-white font-semibold text-xl">
