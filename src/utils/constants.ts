@@ -4,7 +4,7 @@ export const products = [
 		name: "DEVILL",
 		image: "/devill.png",
 		description:
-			"Devill is a board-spectrum insecticide. It is a combination of two compounds. (Fipronil 4%+ Thiamethoxam 4% SC).",
+			"Devill is a board-spectrum insecticide. It is a combination of two compounds. (Fipronil 4%+ Thiamethoxam 4% w/w SC).",
 		dualMode: "Dual mode of action:",
 		actions: ["Contact action", "Stomach action"],
 		effect:

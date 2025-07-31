@@ -7,6 +7,7 @@ interface CounterProps {
 	duration: number;
 	suffix?: string;
 	isVisible: boolean;
+	className: string;
 }
 
 const Counter: React.FC<CounterProps> = ({
@@ -14,6 +15,7 @@ const Counter: React.FC<CounterProps> = ({
 	duration,
 	suffix = "",
 	isVisible,
+	className = "",
 }) => {
 	const [count, setCount] = useState(0);
 	const [hasStarted, setHasStarted] = useState(false);
@@ -46,7 +48,7 @@ const Counter: React.FC<CounterProps> = ({
 	}, [isVisible, hasStarted, end, duration]);
 
 	return (
-		<span className="font-bold text-2xl sm:text-3xl md:text-4xl">
+		<span className={` text-2xl sm:text-3xl md:text-4xl ${className}`}>
 			{count}
 			{suffix}
 		</span>
@@ -90,7 +92,7 @@ const Signature: React.FC = () => {
 			{/* Main content */}
 			<div className="relative z-10 py-8 md:py-12 ">
 				{/* Signature logo section */}
-				<div className="text-center mb-6 pt-16 pb-10 bg-[#E68937] w-screen flex flex-col items-center justify-center">
+				<div className="text-center mb-6 pt-12 pb-8 bg-[#E68937] w-screen flex flex-col items-center justify-center">
 					<div className="mb-4 p-3">
 						<Image
 							src={"/signature.png"}
@@ -101,26 +103,6 @@ const Signature: React.FC = () => {
 							priority
 							quality={100}
 						/>
-					</div>
-					<div className="text-center mt-4 w-full max-w-sm lg:max-w-md">
-						<div className="text-[#FFF6C4] py-2">
-							<div className="px-2 sm:px-4">
-								<span className="text-2xl sm:text-3xl md:text-4xl font-bold uppercase mr-1 sm:mr-2">
-									Across
-								</span>
-								<span className="text-[#FFF6C4]">
-									<Counter
-										end={197}
-										duration={2000}
-										suffix="+"
-										isVisible={isVisible}
-									/>
-									<span className="text-2xl sm:text-3xl md:text-4xl font-bold ml-1 sm:ml-2">
-										CITIES
-									</span>
-								</span>
-							</div>
-						</div>
 					</div>
 				</div>
 
@@ -138,7 +120,7 @@ const Signature: React.FC = () => {
 					</div>
 
 					{/* Trust of Farmers */}
-					<div className="text-[#FFF6C4] flex-shrink-0">
+					<div className="text-[#FFF6C4] flex flex-col items-center justify-center">
 						<div className="bg-[#417849] px-4 py-5">
 							<div className="flex flex-wrap justify-center items-center">
 								<span className="text-2xl sm:text-3xl md:text-4xl font-bold uppercase tracking-wide mr-1 sm:mr-2">
@@ -146,15 +128,37 @@ const Signature: React.FC = () => {
 								</span>
 								<span className="flex items-center">
 									<Counter
-										end={100000}
-										duration={2000}
+										end={127000}
+										duration={4000}
 										suffix="+"
 										isVisible={isVisible}
+										className="font-bold"
 									/>
 									<span className="text-2xl sm:text-3xl md:text-4xl font-bold ml-1 sm:ml-2">
 										FARMERS
 									</span>
 								</span>
+							</div>
+						</div>
+						<div className="text-center mt-4 w-full max-w-sm lg:max-w-md">
+							<div className="text-[#417849] py-2">
+								<div className="px-2 sm:px-4">
+									<span className="text-2xl sm:text-3xl md:text-4xl font-extrabold uppercase mr-1 sm:mr-2">
+										Across
+									</span>
+									<span className="text-[#417849]">
+										<Counter
+											end={206}
+											duration={4000}
+											suffix="+"
+											isVisible={isVisible}
+											className="font-extrabold"
+										/>
+										<span className="text-2xl sm:text-3xl md:text-4xl font-extrabold ml-1 sm:ml-2">
+											CITIES
+										</span>
+									</span>
+								</div>
 							</div>
 						</div>
 					</div>

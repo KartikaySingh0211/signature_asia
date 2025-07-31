@@ -26,7 +26,16 @@ const Footer = () => {
 		<footer className="bg-gray-800 text-white py-12 z-50">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				{/* Main Footer Content */}
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+				<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-32 mb-8">
+					<div className="flex flex-col items-center justify-center rounded-full">
+						<Image
+							src={"/logo.png"}
+							alt="Signature Asia's Logo"
+							width={160}
+							height={160}
+						/>
+						<span className="font-bold pt-5">Since 2015</span>
+					</div>
 					{/* Quick Links */}
 					<div>
 						<h3 className="text-xl font-bold mb-4 text-white">Quick Links</h3>
@@ -58,7 +67,7 @@ const Footer = () => {
 						</ul>
 					</div>
 
-					{/* Legal Info
+					{/* Legal Info */}
 					<div>
 						<h3 className="text-xl font-bold mb-4 text-white">Legal Info</h3>
 						<ul className="space-y-3">
@@ -79,7 +88,7 @@ const Footer = () => {
 								</a>
 							</li>
 						</ul>
-					</div> */}
+					</div>
 
 					{/* Follow Us */}
 					<div>
@@ -144,30 +153,6 @@ const Footer = () => {
 								</Link>
 							</li>
 						</ul>
-					</div>
-				</div>
-
-				{/* Logo and Copyright */}
-				<div className="border-t border-gray-700 pt-8">
-					<div className="flex flex-col md:flex-row justify-between items-center">
-						<div className="flex items-center space-x-2 mb-4 md:mb-0">
-							<div className="flex flex-col items-center justify-center rounded-full">
-								<Image
-									src={"/logo.png"}
-									alt="Signature Asia's Logo"
-									width={80}
-									height={80}
-								/>
-								<span className="font-bold">Since 2015</span>
-							</div>
-						</div>
-
-						<div className="text-center text-gray-400">
-							<p>
-								&copy; 2025 Signature Asia&apos;s. All rights reserved.
-								Empowering farmers since 2015.
-							</p>
-						</div>
 					</div>
 				</div>
 			</div>

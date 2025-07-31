@@ -10,7 +10,7 @@ const Hero = () => {
 	};
 
 	// Array of background images
-	const backgroundImages = ["/bg1.png", "/bg3.jpg", "/bg4.jpg", "/bg2.jpg"];
+	const backgroundImages = ["/bg1.png", "/bg2.png", "/bg3.jpg", "bg4.jpg"];
 
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -44,30 +44,6 @@ const Hero = () => {
 
 			{/* Gradient Overlay */}
 			<div className="absolute inset-0 bg-black opacity-10" />
-
-			{/* Animated stalks /}
-            {/ <div className="absolute inset-0 overflow-hidden">
-                {[...Array(15)].map((_, i) => (
-                    <div
-                        key={i}
-                        className="absolute bottom-0 opacity-40"
-                        style={{
-                            left: ${5 + i * 6}%,
-                            transform: translateY(${Math.random() * 20}px),
-                            animation: sway ${
-                                3 + Math.random() * 2
-                            }s ease-in-out infinite alternate,
-                        }}
-                    >
-                        <div
-                            className="w-1 bg-gradient-to-t from-green-600 to-green-400 rounded-full"
-                            style={{ height: ${150 + Math.random() * 100}px }}
-                        >
-                            <div className="absolute -top-2 -left-2 w-5 h-8 bg-gradient-to-r from-yellow-300 to-yellow-500 rounded-full opacity-80" />
-                        </div>
-                    </div>
-                ))}
-            </div> */}
 
 			{/* Hero Content */}
 			<div className="relative top-1/6 z-10 text-center mx-auto px-4 sm:px-6 lg:px-8">

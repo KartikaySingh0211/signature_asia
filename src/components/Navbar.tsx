@@ -54,7 +54,7 @@ const Header = () => {
 								className="h-[100%] w-[100%]"
 							/>
 						</div>
-						<span className="text-white font-bold text-xl">
+						<span className="text-white font-semibold text-xl">
 							Signature Asia&apos;s
 						</span>
 					</div>
