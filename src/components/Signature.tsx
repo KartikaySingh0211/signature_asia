@@ -120,20 +120,22 @@ const Signature: React.FC = () => {
 					</div>
 
 					{/* Trust of Farmers */}
-					<div className="text-[#FFF6C4] flex flex-col items-center justify-center">
-						<div className="bg-[#417849] px-4 py-5">
+					<div className="text-[#FFF6C4] flex flex-col items-center justify-center min-w-[30%]">
+						<div className="bg-[#417849] px-4 py-5 min-w-full">
 							<div className="flex flex-wrap justify-center items-center">
 								<span className="text-2xl sm:text-3xl md:text-4xl font-bold uppercase tracking-wide mr-1 sm:mr-2">
 									Trust of
 								</span>
 								<span className="flex items-center">
-									<Counter
-										end={127000}
-										duration={4000}
-										suffix="+"
-										isVisible={isVisible}
-										className="font-bold"
-									/>
+									<div className="inline-block min-w-[120px] sm:min-w-[140px] md:min-w-[160px] text-center">
+										<Counter
+											end={127000}
+											duration={4000}
+											suffix="+"
+											isVisible={isVisible}
+											className="font-bold font-mono"
+										/>
+									</div>
 									<span className="text-2xl sm:text-3xl md:text-4xl font-bold ml-1 sm:ml-2">
 										FARMERS
 									</span>
@@ -142,19 +144,21 @@ const Signature: React.FC = () => {
 						</div>
 						<div className="text-center mt-4 w-full max-w-sm lg:max-w-md">
 							<div className="text-[#417849] py-2">
-								<div className="px-2 sm:px-4">
-									<span className="text-2xl sm:text-3xl md:text-4xl font-extrabold uppercase mr-1 sm:mr-2">
+								<div className="px-2 sm:px-4 flex items-center justify-center flex-nowrap">
+									<span className="text-2xl sm:text-3xl md:text-4xl font-extrabold uppercase mr-1 sm:mr-2 whitespace-nowrap">
 										Across
 									</span>
-									<span className="text-[#417849]">
-										<Counter
-											end={206}
-											duration={4000}
-											suffix="+"
-											isVisible={isVisible}
-											className="font-extrabold"
-										/>
-										<span className="text-2xl sm:text-3xl md:text-4xl font-extrabold ml-1 sm:ml-2">
+									<span className="text-[#417849] flex items-center justify-center flex-nowrap">
+										<div className="inline-block min-w-[80px] sm:min-w-[90px] md:min-w-[100px] text-center">
+											<Counter
+												end={206}
+												duration={4000}
+												suffix="+"
+												isVisible={isVisible}
+												className="font-extrabold font-mono"
+											/>
+										</div>
+										<span className="text-2xl sm:text-3xl md:text-4xl font-extrabold ml-1 sm:ml-2 whitespace-nowrap">
 											CITIES
 										</span>
 									</span>
