@@ -115,6 +115,17 @@ const Footer = () => {
 									Youtube
 								</Link>
 							</li>
+
+							<li>
+								<Link
+									href="https://www.facebook.com/share/v/1EvBPYDBjS/"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="text-gray-300 hover:text-green-400 transition-colors duration-200"
+								>
+									Facebook
+								</Link>
+							</li>
 						</ul>
 					</div>
 
