@@ -17,7 +17,7 @@ const Partners = () => {
 				{/* Header Section */}
 				<div className="text-center mb-8 sm:mb-12 lg:mb-16 relative">
 					<div className="inline-block">
-						<h1 className="bg-[#417849] text-[#FFF6C4] px-4 sm:px-6 lg:px-8 sm:py-2 rounded-md text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4 shadow-2xl lg:absolute lg:-top-7 lg:left-1/5">
+						<h1 className="bg-[#417849] text-[#FFF6C4] px-4 sm:px-6 lg:px-8 sm:py-2 rounded-md text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4 shadow-2xl">
 							Our Partners
 						</h1>
 					</div>
