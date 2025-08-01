@@ -1,36 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
-
-// Toast notification component
-type ToastProps = {
-	message: string;
-	type: "success" | "error";
-	isVisible: boolean;
-	onClose: () => void;
-};
-
-const Toast: React.FC<ToastProps> = ({ message, type, isVisible, onClose }) => {
-	if (!isVisible) return null;
-
-	const bgColor = type === "success" ? "bg-green-500" : "bg-red-500";
-	const icon = type === "success" ? "✓" : "✕";
-
-	return (
-		<div
-			className={`fixed top-4 right-4 ${bgColor} text-white px-6 py-4 rounded-lg shadow-lg z-50 flex items-center space-x-3 animate-slide-in`}
-		>
-			<span className="text-xl font-bold">{icon}</span>
-			<span className="font-medium">{message}</span>
-			<button
-				onClick={onClose}
-				className="ml-4 text-white hover:text-gray-200 font-bold text-lg"
-			>
-				×
-			</button>
-		</div>
-	);
-};
+import { toast } from "sonner";
 
 const ContactForm = () => {
 	const [formData, setFormData] = useState({
@@ -48,29 +19,6 @@ const ContactForm = () => {
 	});
 
 	const [isSubmitting, setIsSubmitting] = useState(false);
-	const [toast, setToast] = useState<{
-		isVisible: boolean;
-		message: string;
-		type: "success" | "error";
-	}>({
-		isVisible: false,
-		message: "",
-		type: "success", // 'success' or 'error'
-	});
-
-	// Show toast notification
-	const showToast = (message: string, type: "success" | "error") => {
-		setToast({ isVisible: true, message, type });
-		// Auto-hide after 5 seconds
-		setTimeout(() => {
-			setToast((prev) => ({ ...prev, isVisible: false }));
-		}, 5000);
-	};
-
-	// Hide toast notification
-	const hideToast = () => {
-		setToast((prev) => ({ ...prev, isVisible: false }));
-	};
 
 	// Email validation function
 	const validateEmail = (email: string): boolean => {
@@ -225,17 +173,29 @@ const ContactForm = () => {
 			});
 
 			// Show success toast notification
-			showToast(
+			toast.success(
 				"Thank you! Your message has been sent successfully. We will get back to you soon.",
-				"success"
+				{
+					style: {
+						backgroundColor: "#FFF6C4",
+						color: "#417849",
+						fontSize: "20px",
+					},
+				}
 			);
 		} catch (error) {
 			console.error("Error sending email:", error);
 
 			// Show error toast notification
-			showToast(
+			toast.error(
 				"Sorry, there was an error sending your message. Please try again or contact us directly.",
-				"error"
+				{
+					style: {
+						backgroundColor: "#FFF6C4",
+						color: "#417849",
+						fontSize: "20px",
+					},
+				}
 			);
 		} finally {
 			setIsSubmitting(false);
@@ -255,12 +215,12 @@ const ContactForm = () => {
 	return (
 		<div className="space-y-6">
 			{/* Toast Notification */}
-			<Toast
+			{/* <Toast
 				message={toast.message}
 				type={toast.type}
 				isVisible={toast.isVisible}
 				onClose={hideToast}
-			/>
+			/> */}
 
 			<div className="mb-8">
 				<h1 className="text-[#FFF6C4] text-4xl font-bold mb-3">

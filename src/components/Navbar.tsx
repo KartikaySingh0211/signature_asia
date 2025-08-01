@@ -5,6 +5,13 @@ import React, { useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { navLinks } from "@/utils/constants";
 
+import { Roboto } from "next/font/google";
+
+const roboto = Roboto({
+	weight: ["400", "700"], // choose weights you need
+	subsets: ["latin"],
+});
+
 const Header = () => {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 	const pathname = usePathname();
@@ -55,7 +62,9 @@ const Header = () => {
 								quality={100}
 							/>
 						</div>
-						<span className="text-white font-semibold text-xl">
+						<span
+							className={`${roboto.className} text-white font-normal text-xl`}
+						>
 							Signature Asia&apos;s
 						</span>
 					</div>

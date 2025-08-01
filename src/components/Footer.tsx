@@ -1,10 +1,13 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import TrademarkModal from "./TrademarkModal";
 
 const Footer = () => {
+	const [isOpen, setIsOpen] = useState(false);
+
 	const pathname = usePathname();
 	const router = useRouter();
 	const isHomePage = pathname === "/";
@@ -80,12 +83,13 @@ const Footer = () => {
 								</a>
 							</li>
 							<li>
-								<a
-									href="#copyright"
-									className="text-gray-300 hover:text-green-400 transition-colors duration-200"
+								<button
+									onClick={() => setIsOpen(true)}
+									className="text-gray-300 hover:text-green-400 cursor-pointer transition-colors duration-200"
 								>
-									Copyright
-								</a>
+									Trademark
+								</button>
+								{isOpen && <TrademarkModal setIsOpen={setIsOpen} />}
 							</li>
 						</ul>
 					</div>

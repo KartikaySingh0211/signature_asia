@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { matangi } from "@/app/fonts/matangi";
 import LeafBackgroundPattern from "@/components/LeafBackgroundPattern";
+import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
 	title: "Signature Asia's",
@@ -24,6 +25,7 @@ export default function RootLayout({
 				<LeafBackgroundPattern className="min-h-screen bg-[#FFF6C4]">
 					<Navbar />
 					{children}
+					<Toaster />
 					<Footer />
 				</LeafBackgroundPattern>
 			</body>

@@ -109,3 +109,14 @@ export const navLinks = [
 	{ name: "About Us", href: "about" },
 	{ name: "Contact Us", href: "contact" },
 ];
+
+export const trademarks = [
+	{ name: "SYSSTEM", regNo: "4108316", date: "06/03/2019" },
+	{ name: "HUNKAAR", regNo: "4105575", date: "02/03/2019" },
+	{ name: "DEVILL", regNo: "4059072", date: "17/01/2019" },
+	{ name: "ZARRA", regNo: "4105568", date: "07/09/2020" },
+	{ name: "NAKAIL", regNo: "4140042", date: "14/09/2020" },
+	{ name: "SHIKANJA", regNo: "4669870", date: "26/10/2020" },
+	{ name: "BARREL", regNo: "4105567", date: "25/10/2021" },
+	{ name: "SIGNATURE WITH LEAF", regNo: "4721653", date: "02/10/2023" },
+];
