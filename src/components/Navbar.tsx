@@ -60,6 +60,7 @@ const Header = () => {
 								height={60}
 								className="h-[100%] w-[100%]"
 								quality={100}
+								loading="eager"
 							/>
 						</div>
 						<span

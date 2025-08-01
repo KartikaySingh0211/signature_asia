@@ -43,6 +43,8 @@ const ProductCarousel = () => {
 											alt={product.name}
 											width={180}
 											height={250}
+											quality={100}
+											loading="eager"
 										/>
 									</div>
 
@@ -103,6 +105,8 @@ const ProductCarousel = () => {
 											alt={product.name}
 											width={200}
 											height={300}
+											quality={100}
+											loading="eager"
 										/>
 									</div>
 

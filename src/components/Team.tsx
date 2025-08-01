@@ -47,12 +47,13 @@ const Team = () => {
 										<div className="flex-shrink-0 flex flex-col justify-center items-center">
 											<div className="w-48 h-48 rounded-full bg-green-100 overflow-hidden">
 												<Image
-													loading="lazy"
+													loading="eager"
 													src={member.image}
 													alt={member.name}
 													className="w-full h-full object-cover"
 													width={140}
 													height={140}
+													quality={100}
 												/>
 											</div>
 											<div className="mt-4 bg-[#FFF6C4] rounded-sm p-2 text-center">

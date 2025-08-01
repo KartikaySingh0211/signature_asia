@@ -39,6 +39,7 @@ const Hero = () => {
 					style={{
 						imageRendering: "crisp-edges",
 					}}
+					loading="eager"
 				/>
 			))}
 
