@@ -47,7 +47,13 @@ const ProductCarousel = () => {
 									</div>
 
 									{/* Product Details */}
-									<div className="bg-[#11582A] rounded-lg p-4 text-white">
+									<div
+										className={`bg-[#11582A] rounded-lg p-4 text-white ${
+											product.id === 1 || product.id === 3 || product.id === 4
+												? "mt-10"
+												: ""
+										}`}
+									>
 										<h2 className="text-xl font-bold mb-3 text-[#E9E5B4]">
 											{product.name}
 										</h2>
