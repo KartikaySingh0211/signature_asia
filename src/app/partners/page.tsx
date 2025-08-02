@@ -51,7 +51,9 @@ const Partners = () => {
 													loading="eager"
 													src={member.image}
 													alt={member.name}
-													className="w-full h-full object-cover"
+													className={`w-full h-full object-cover ${
+														index === 2 ? "mt-6 " : ""
+													}`}
 													width={140}
 													height={140}
 													quality={100}

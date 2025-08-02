@@ -64,7 +64,7 @@ const Header = () => {
 							/>
 						</div>
 						<span
-							className={`${roboto.className} text-white font-normal text-xl`}
+							className={`${roboto.className} text-white font-normal text-2xl`}
 						>
 							Signature Asia&apos;s
 						</span>
