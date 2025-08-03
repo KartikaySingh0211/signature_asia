@@ -48,7 +48,7 @@ const Hero = () => {
 
 			{/* Hero Content */}
 			<div className="relative top-1/6 z-10 text-center mx-auto px-4 sm:px-6 lg:px-8">
-				<h1 className="text-4xl md:text-[48px] font-extrabold text-[#417849] mb-6">
+				<h1 className="text-4xl md:text-[48px] font-extrabold text-[#005249] mb-6">
 					Empowering Farmers with Innovative Agro Solutions
 				</h1>
 				<p className="text-lg md:text-2xl text-white font-semibold mt-8 max-w-2xl mx-auto text-shadow-2xs">
