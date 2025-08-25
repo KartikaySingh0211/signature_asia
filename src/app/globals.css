@@ -123,11 +123,11 @@
 }
 
 /* Navbar with subtle bottom fade effect */
-.navbar-bottom-fade {
+.bottom-fade {
 	position: fixed;
 }
 
-.navbar-bottom-fade::after {
+.bottom-fade::after {
 	content: "";
 	position: absolute;
 	bottom: -8px;

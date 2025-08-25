@@ -26,7 +26,7 @@ const Footer = () => {
 	};
 
 	return (
-		<footer className="bg-gray-800 text-white py-12 z-50">
+		<footer className="bg-gray-800 text-white pt-12 pb-1 z-50">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				{/* Main Footer Content */}
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-32 mb-8">
@@ -61,7 +61,7 @@ const Footer = () => {
 							</li>
 							<li>
 								<Link
-									href={"/partners"}
+									href={"/partner-moto"}
 									className="text-gray-300 hover:text-green-400 transition-colors duration-200 cursor-pointer"
 								>
 									Partners

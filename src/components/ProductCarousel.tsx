@@ -99,7 +99,7 @@ const ProductCarousel = () => {
 								{/* Desktop Layout */}
 								<div className="hidden sm:flex items-center justify-center px-12 py-8 min-h-[600px]">
 									{/* Product Image */}
-									<div className="flex-shrink-0 mr-32 flex items-center justify-center">
+									<div className="flex-shrink-0 ml-10 mr-16 flex items-center justify-center">
 										<Image
 											src={product.image}
 											alt={product.name}
@@ -111,7 +111,7 @@ const ProductCarousel = () => {
 									</div>
 
 									{/* Product Details */}
-									<div className="flex-1 bg-[#E9E5B4] lg:max-w-4xl rounded-lg p-6 text-black">
+									<div className="flex-1 bg-[#E9E5B4] lg:max-w-4xl rounded-lg p-6 text-black mr-6">
 										<h2 className="text-2xl font-bold mb-4 text-black">
 											{product.name}
 										</h2>

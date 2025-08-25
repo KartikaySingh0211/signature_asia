@@ -51,15 +51,15 @@ const Header = () => {
 	};
 
 	return (
-		<header className="bg-[#1c1c36] navbar-bottom-fade fixed w-full top-0 z-50">
-			<div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
+		<header className="bg-[#1c1c36] bottom-fade fixed w-full top-0 z-50">
+			<div className="min-w-full mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex justify-between items-center py-4">
 					{/* Logo */}
 					<div
-						className="flex items-center space-x-2 cursor-pointer"
+						className="flex justify-start items-center space-x-2 cursor-pointer lg:ml-16"
 						onClick={handleLogoClick}
 					>
-						<div className="bg-white rounded-full lg:ml-60">
+						<div className="bg-white rounded-full">
 							<Image
 								src={"/logo.png"}
 								alt="Signature Asia Logo"
