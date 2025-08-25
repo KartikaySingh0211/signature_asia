@@ -104,10 +104,10 @@ export const teamMembers = [
 ];
 
 export const navLinks = [
-	{ name: "Our Mission", href: "mission" },
-	{ name: "Our Products", href: "product" },
-	{ name: "About Us", href: "about" },
-	{ name: "Contact Us", href: "contact" },
+	{ name: "Mission", href: "mission" },
+	{ name: "Products", href: "product" },
+	{ name: "About", href: "about" },
+	{ name: "Contact", href: "contact" },
 ];
 
 export const trademarks = [

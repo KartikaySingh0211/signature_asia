@@ -92,7 +92,7 @@ const Signature: React.FC = () => {
 			{/* Main content */}
 			<div className="relative z-10 py-8 md:py-12 ">
 				{/* Signature logo section */}
-				<div className="text-center mb-6 pt-12 pb-8 bg-[#E68937] w-screen flex flex-col items-center justify-center">
+				<div className="text-center mb-6 pt-12 pb-8 bg-[#417849] w-screen flex flex-col items-center justify-center">
 					<div className="mb-4 p-3">
 						<Image
 							src={"/signature.png"}

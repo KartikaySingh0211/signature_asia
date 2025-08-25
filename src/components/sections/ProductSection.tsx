@@ -3,8 +3,8 @@ import React from "react";
 import ProductCarousel from "@/components/ProductCarousel";
 const ProductSection = () => {
 	return (
-		<div className="cursor-default">
-			<ProductCarousel />;
+		<div className="cursor-default lg:mt-20 mt-15">
+			<ProductCarousel />
 			<div
 				id="about"
 				className="mt-16 flex justify-center space-x-4 opacity-30"

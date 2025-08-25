@@ -16,11 +16,11 @@ const ProductCarousel = () => {
 	};
 
 	return (
-		<div className="w-full max-w-7xl mx-auto p-2 sm:p-8 rounded-2xl">
+		<div className="w-full max-w-full mx-auto sm:p-8 md:px-32  rounded-2xl">
 			<div className="relative overflow-hidden rounded-xl bg-[#417849] shadow-lg">
 				{/* Header */}
 				<div className="text-center py-4 sm:py-6 bg-[#11582A] px-4">
-					<h1 className="text-lg sm:text-3xl font-bold text-[#E9E5B4] tracking-wide">
+					<h1 className="text-lg sm:text-3xl font-extrabold text-[#E9E5B4] tracking-wide">
 						Boost Your Harvest with Our Solutions
 					</h1>
 				</div>
@@ -50,44 +50,44 @@ const ProductCarousel = () => {
 
 									{/* Product Details */}
 									<div
-										className={`bg-[#11582A] rounded-lg p-4 text-white ${
+										className={`bg-[#E9E5B4] rounded-lg p-4 text-black ${
 											product.id === 1 || product.id === 3 || product.id === 4
 												? "mt-10"
 												: ""
 										}`}
 									>
-										<h2 className="text-xl font-bold mb-3 text-[#E9E5B4]">
+										<h2 className="text-xl font-bold mb-3 text-black">
 											{product.name}
 										</h2>
 
-										<p className="text-xs mb-3 leading-relaxed opacity-90">
+										<p className="text-xs mb-3 font-bold leading-relaxed">
 											{product.description}
 										</p>
 
 										<div className="mb-3">
-											<p className="text-xs font-semibold mb-2 text-[#E9E5B4]">
+											<p className="text-xs font-bold mb-2 text-black">
 												{product.dualMode}
 											</p>
 											<div className="ml-3">
 												{product.actions.map((action, idx) => (
-													<p key={idx} className="text-xs mb-1 opacity-90">
+													<p key={idx} className="text-xs mb-1 font-bold">
 														• {action}
 													</p>
 												))}
 											</div>
 										</div>
 
-										<p className="text-xs mb-3 leading-relaxed opacity-90">
+										<p className="text-xs mb-3 leading-relaxed font-bold">
 											{product.effect}
 										</p>
 
 										<div>
-											<h3 className="text-sm font-semibold mb-2 text-[#E9E5B4]">
+											<h3 className="text-sm font-bold mb-2 text-black">
 												Benefits
 											</h3>
 											<div className="space-y-1">
 												{product.benefits.map((benefit, idx) => (
-													<p key={idx} className="text-xs opacity-90">
+													<p key={idx} className="text-xs font-bold">
 														• {benefit}
 													</p>
 												))}
@@ -99,7 +99,7 @@ const ProductCarousel = () => {
 								{/* Desktop Layout */}
 								<div className="hidden sm:flex items-center justify-center px-12 py-8 min-h-[600px]">
 									{/* Product Image */}
-									<div className="flex-shrink-0 mr-8 flex items-center justify-center">
+									<div className="flex-shrink-0 mr-32 flex items-center justify-center">
 										<Image
 											src={product.image}
 											alt={product.name}
@@ -111,39 +111,39 @@ const ProductCarousel = () => {
 									</div>
 
 									{/* Product Details */}
-									<div className="flex-1 bg-[#11582A] lg:max-w-3xl rounded-lg p-6 text-white">
-										<h2 className="text-2xl font-bold mb-4 text-[#E9E5B4]">
+									<div className="flex-1 bg-[#E9E5B4] lg:max-w-4xl rounded-lg p-6 text-black">
+										<h2 className="text-2xl font-bold mb-4 text-black">
 											{product.name}
 										</h2>
 
-										<p className="text-sm mb-4 leading-relaxed opacity-90">
+										<p className="text-sm mb-4 font-bold leading-relaxed ">
 											{product.description}
 										</p>
 
 										<div className="mb-4">
-											<p className="text-sm font-semibold mb-2 text-[#E9E5B4]">
+											<p className="text-sm font-bold mb-2 text-black">
 												{product.dualMode}
 											</p>
 											<div className="ml-4">
 												{product.actions.map((action, idx) => (
-													<p key={idx} className="text-sm mb-1 opacity-90">
+													<p key={idx} className="text-sm mb-1 font-bold ">
 														• {action}
 													</p>
 												))}
 											</div>
 										</div>
 
-										<p className="text-sm mb-4 leading-relaxed opacity-90">
+										<p className="text-sm mb-4 leading-relaxed font-bold ">
 											{product.effect}
 										</p>
 
 										<div>
-											<h3 className="text-lg font-semibold mb-3 text-[#E9E5B4]">
+											<h3 className="text-lg font-bold mb-3 text-black">
 												Benefits
 											</h3>
 											<div className="space-y-1">
 												{product.benefits.map((benefit, idx) => (
-													<p key={idx} className="text-sm opacity-90">
+													<p key={idx} className="text-sm font-bold ">
 														• {benefit}
 													</p>
 												))}

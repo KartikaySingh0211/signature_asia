@@ -10,7 +10,7 @@ interface ContactSectionProps {
 const ContactSection: React.FC<ContactSectionProps> = ({ className = "" }) => {
 	return (
 		<div
-			className={`mt-10 p-6 pb-[10vh] w-full flex flex-col items-center ${className}`}
+			className={`mt-16 lg:mt-32 p-6 pb-[10vh] w-full flex flex-col items-center ${className}`}
 		>
 			<div className="bg-[#417849] rounded-3xl p-8 w-fit max-w-7xl shadow-2xl relative overflow-hidden">
 				{/* Noise texture overlay */}

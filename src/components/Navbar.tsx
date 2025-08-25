@@ -5,9 +5,16 @@ import React, { useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { navLinks } from "@/utils/constants";
 
+import { Inter } from "next/font/google";
+
 import { Roboto } from "next/font/google";
 
 const roboto = Roboto({
+	weight: ["400", "700"], // choose weights you need
+	subsets: ["latin"],
+});
+
+const inter = Inter({
 	weight: ["400", "700"], // choose weights you need
 	subsets: ["latin"],
 });
@@ -44,40 +51,40 @@ const Header = () => {
 	};
 
 	return (
-		<header className="bg-[#417849] navbar-bottom-fade fixed w-full top-0 z-50">
-			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+		<header className="bg-[#1c1c36] navbar-bottom-fade fixed w-full top-0 z-50">
+			<div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex justify-between items-center py-4">
 					{/* Logo */}
 					<div
 						className="flex items-center space-x-2 cursor-pointer"
 						onClick={handleLogoClick}
 					>
-						<div className="bg-white rounded-full">
+						<div className="bg-white rounded-full lg:ml-60">
 							<Image
 								src={"/logo.png"}
 								alt="Signature Asia Logo"
-								width={60}
-								height={60}
+								width={65}
+								height={65}
 								className="h-[100%] w-[100%]"
 								quality={100}
 								loading="eager"
 							/>
 						</div>
 						<span
-							className={`${roboto.className} text-white font-normal text-2xl`}
+							className={`${roboto.className} text-white font-semibold text-4xl`}
 						>
 							Signature Asia&apos;s
 						</span>
 					</div>
 
 					{/* Centered Navigation for desktop */}
-					<nav className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-8">
+					<nav className="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 space-x-8">
 						{/* Navigation Links */}
 						{navLinks.map((link) => (
 							<div
 								key={link.href}
 								onClick={() => scrollToSection(link.href)}
-								className="text-white font-bold hover:text-green-200 transition-colors duration-200 cursor-pointer"
+								className={` ${inter.className} text-white hover:text-green-200 transition-colors duration-200 cursor-pointer text-lg`}
 							>
 								{link.name}
 							</div>
@@ -85,7 +92,7 @@ const Header = () => {
 					</nav>
 
 					{/* Mobile menu button */}
-					<div className="md:hidden">
+					<div className="lg:hidden">
 						<button
 							onClick={toggleMobileMenu}
 							className="text-white hover:text-green-200 transition-colors duration-200"
@@ -101,8 +108,8 @@ const Header = () => {
 
 				{/* Mobile Navigation Menu */}
 				{isMobileMenuOpen && (
-					<div className="md:hidden">
-						<div className="bg-green-800 rounded-b-lg shadow-lg">
+					<div className="lg:hidden">
+						<div className="bg-[#FFF6C4] rounded-b-lg shadow-lg">
 							<div className="px-4 pt-3 pb-4 space-y-1">
 								{/* Mobile Navigation Links */}
 								{navLinks.map((link) => (
@@ -112,7 +119,7 @@ const Header = () => {
 											toggleMobileMenu();
 											scrollToSection(link.href);
 										}}
-										className="block px-4 py-3 text-white hover:text-green-200 hover:bg-green-600 rounded-lg transition-all duration-200 cursor-pointer active:bg-green-500 font-medium"
+										className="block px-4 py-3 text-black hover:text-green-200 hover:bg-green-600 rounded-lg transition-all duration-200 cursor-pointer active:bg-green-500 font-medium"
 									>
 										{link.name}
 									</div>

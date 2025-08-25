@@ -47,8 +47,8 @@ const Hero = () => {
 			<div className="absolute inset-0 bg-black opacity-10" />
 
 			{/* Hero Content */}
-			<div className="relative top-1/6 z-10 text-center mx-auto px-4 sm:px-6 lg:px-8">
-				<h1 className="text-4xl md:text-[48px] font-extrabold text-[#005249] mb-6">
+			<div className="relative top-1/6 mt-5 z-10 text-center mx-auto px-4 sm:px-6 lg:px-8">
+				<h1 className="text-4xl md:text-[48px] font-extrabold text-[#11582A] mb-6">
 					Empowering Farmers with Innovative Agro Solutions
 				</h1>
 				<p className="text-lg md:text-2xl text-white font-semibold mt-8 max-w-2xl mx-auto text-shadow-2xs">
@@ -65,8 +65,8 @@ const Hero = () => {
 				onClick={() => scrollToSection("mission")}
 				className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer"
 			>
-				<div className="w-10 h-14 border-4 border-green-600 rounded-full flex justify-center">
-					<div className="w-1 h-3 bg-green-600 rounded-full mt-2 animate-pulse" />
+				<div className="w-10 h-14 border-4 border-[#11582A] rounded-full flex justify-center">
+					<div className="w-1 h-3 bg-[#11582A] rounded-full mt-2 animate-pulse" />
 				</div>
 			</div>
 		</section>
