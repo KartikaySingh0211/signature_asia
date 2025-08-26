@@ -14,7 +14,7 @@ const PartnerMotoPage: React.FC = () => {
 				{/* Main content */}
 				<div className="flex flex-col lg:flex-row items-center justify-center gap-8 max-w-7xl mx-auto">
 					{/* Profile Card */}
-					<div className=" min-w-sm">
+					<div className="md:min-w-sm">
 						<div className="bg-[#417849] rounded-sm p-6 shadow-lg">
 							{/* Name Header */}
 							<div className="bg-[#FFF6C4] rounded-sm font-bold px-4 py-1 text-center mb-6">
