@@ -27,7 +27,7 @@ const ProfileCard = ({
 		<div key={index} className="bg-[#417849] rounded-sm p-6 shadow-lg">
 			{/* Name Header */}
 			<div className="bg-[#FFF6C4] rounded-sm font-bold p-4 text-center mb-6">
-				<h2 className="text-2xl font-bold text-black">{name}</h2>
+				<h2 className="text-2xl font-semibold text-black">{name}</h2>
 			</div>
 
 			<div className="flex flex-col md:flex-row gap-6">

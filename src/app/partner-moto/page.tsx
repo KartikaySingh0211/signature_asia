@@ -18,7 +18,7 @@ const PartnerMotoPage: React.FC = () => {
 						<div className="bg-[#417849] rounded-sm p-6 shadow-lg">
 							{/* Name Header */}
 							<div className="bg-[#FFF6C4] rounded-sm font-bold px-4 py-1 text-center mb-6">
-								<h2 className="text-2xl font-bold text-black">
+								<h2 className="text-2xl font-semibold text-black">
 									Subhash Chaudhary
 								</h2>
 							</div>

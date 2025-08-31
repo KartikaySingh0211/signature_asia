@@ -63,15 +63,15 @@ const Header = () => {
 							<Image
 								src={"/logo.png"}
 								alt="Signature Asia Logo"
-								width={65}
-								height={65}
+								width={64}
+								height={64}
 								className="h-[100%] w-[100%]"
 								quality={100}
 								loading="eager"
 							/>
 						</div>
 						<span
-							className={`${roboto.className} text-white font-semibold text-4xl`}
+							className={`${roboto.className} text-white font-semibold text-3xl`}
 						>
 							Signature Asia&apos;s
 						</span>

@@ -8,7 +8,7 @@ const Partners = () => {
 		<div className="min-h-screen flex flex-col items-center justify-center py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 mt-20 sm:mt-20 lg:mt-20">
 			<div className="max-w-7xl mx-auto">
 				{/* Header Section */}
-				<div className="text-center mb-8 sm:mb-12 lg:mb-16 relative">
+				<div className="text-center mb-8 mt-10 lg:mt-0 sm:mb-12 lg:mb-16 relative">
 					<div className="inline-block">
 						<h1 className="bg-[#417849] text-[#FFF6C4] px-4 sm:px-6 lg:px-8 sm:py-2 rounded-md text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4 shadow-2xl">
 							Our Partners

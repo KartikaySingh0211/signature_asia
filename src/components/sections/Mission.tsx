@@ -11,7 +11,7 @@ export default function MissionSection() {
 					<div className="inline-block bg-[#417849] text-[#f3e9c4] px-3 py-1 rounded-md text-2xl font-semibold mb-4">
 						Our mission
 					</div>
-					<h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#005249] mb-6">
+					<h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#005249] mb-6">
 						Innovative Solutions for Modern Agriculture
 					</h2>
 					<p className="text-lg text-[#623E15] font-bold max-w-4xl mx-auto leading-relaxed">
@@ -47,7 +47,7 @@ export default function MissionSection() {
 						</div>
 
 						<div className="text-left p-6 rounded-lg hover:shadow-lg transition-shadow duration-300">
-							<h4 className="text-3xl font-extrabold text-[#417849] mb-3">
+							<h4 className="text-3xl font-bold text-[#417849] mb-3">
 								Pest Protection
 							</h4>
 							<p className="text-[#623E15] font-semibold text-sm">
@@ -103,7 +103,7 @@ export default function MissionSection() {
 						</div>
 
 						<div className=" text-right p-6 rounded-lg hover:shadow-lg transition-shadow duration-300">
-							<h4 className="text-3xl font-extrabold text-[#417849] mb-3">
+							<h4 className="text-3xl font-bold text-[#417849] mb-3">
 								Crop Yield
 							</h4>
 							<p className="text-[#623E15] font-semibold text-sm">

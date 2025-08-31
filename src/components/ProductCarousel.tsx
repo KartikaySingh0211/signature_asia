@@ -20,7 +20,7 @@ const ProductCarousel = () => {
 			<div className="relative overflow-hidden rounded-xl bg-[#417849] shadow-lg">
 				{/* Header */}
 				<div className="text-center py-4 sm:py-6 bg-[#11582A] px-4">
-					<h1 className="text-lg sm:text-3xl font-extrabold text-[#E9E5B4] tracking-wide">
+					<h1 className="text-lg sm:text-3xl font-bold text-[#E9E5B4] tracking-wide">
 						Boost Your Harvest with Our Solutions
 					</h1>
 				</div>
@@ -50,7 +50,7 @@ const ProductCarousel = () => {
 
 									{/* Product Details */}
 									<div
-										className={`bg-[#E9E5B4] rounded-lg p-4 text-black ${
+										className={`bg-[#E9E5B4] rounded-xl p-4 text-black ${
 											product.id === 1 || product.id === 3 || product.id === 4
 												? "mt-10"
 												: ""
@@ -111,7 +111,7 @@ const ProductCarousel = () => {
 									</div>
 
 									{/* Product Details */}
-									<div className="flex-1 bg-[#E9E5B4] lg:max-w-4xl rounded-lg p-6 text-black mr-6">
+									<div className="flex-1 bg-[#E9E5B4] lg:max-w-4xl rounded-xl p-6 text-black mr-6">
 										<h2 className="text-2xl font-bold mb-4 text-black">
 											{product.name}
 										</h2>
