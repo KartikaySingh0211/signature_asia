@@ -10,7 +10,7 @@ const Hero = () => {
 	};
 
 	// Array of background images
-	const backgroundImages = ["/bg1.png", "/bg3.jpg", "bg4.jpg"];
+	const backgroundImages = ["/bg1.png", "/bg2.png", "bg3.png"];
 
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
 

@@ -56,16 +56,16 @@ const Header = () => {
 				<div className="flex justify-between items-center py-4">
 					{/* Logo */}
 					<div
-						className="flex justify-start items-center space-x-2 cursor-pointer lg:ml-16"
+						className="flex justify-start items-center space-x-0 cursor-pointer lg:ml-16"
 						onClick={handleLogoClick}
 					>
-						<div className="bg-white rounded-full">
+						<div className="rounded-full">
 							<Image
 								src={"/logo.png"}
 								alt="Signature Asia Logo"
-								width={64}
-								height={64}
-								className="h-[100%] w-[100%]"
+								width={65}
+								height={65}
+								className="h-[80%] w-[80%] object-cover"
 								quality={100}
 								loading="eager"
 							/>
@@ -78,7 +78,7 @@ const Header = () => {
 					</div>
 
 					{/* Centered Navigation for desktop */}
-					<nav className="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 space-x-8">
+					<nav className="hidden lg:flex absolute  lg:left-1/2 transform -translate-x-1/2 space-x-8">
 						{/* Navigation Links */}
 						{navLinks.map((link) => (
 							<div
